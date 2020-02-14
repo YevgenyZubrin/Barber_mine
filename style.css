@@ -20,47 +20,16 @@
     min-height: 1750px;
 }
 
-.page-shop__container{
-    background-color: #fbf8f5;
-    background-image: url(backgrounds/main-items-back.jpg);
-    background-position: 0 0;
-    background-repeat: repeat;
-
-    min-height: 1170px;
-}
-
-.page__header{
-    background-color: #000000;
-}
-
 .header__navigation{
     display: flex;
     flex-direction:  column;
     align-items: center;
 }
 
-.page__navigation{
-    flex-direction: row;
-    justify-content: flex-start;
-
-    width: 940px;
-    margin: 0 auto;
-}
-
 .header__logo{
     order: 3;
 
     margin-bottom: 75px;
-}
-
-.page__logo{
-    order: 0;
-    margin-bottom: 0;
-
-    line-height: 0;
-
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .navigation-container{
@@ -108,28 +77,6 @@
     line-height: 20px;
 
     padding: 25px 20px;
-}
-
-.site-navigation__link_current::after{
-    content: "";
-
-    box-sizing: content-box;
-
-    position: absolute;
-
-    bottom: 0px;
-    left: 20px;
-    right: 20px;
-
-    height: 4px;
-
-    background-color: #fff;
-}
-
-.site-navigation__link_current:not([href]):hover ,
-.site-navigation__link_current:not([href]):focus,
-.site-navigation__link_current:not([href]):active{
-    background-color: #000000;
 }
 
 .user-navigation__link{
@@ -715,4 +662,76 @@ input[type="radio"].visually-hidden{
 
 .overlay-show{
     display: block;
+}
+
+/* страница магазина */
+
+.page-shop__container{
+    background-color: #fbf8f5;
+    background-image: url(backgrounds/main-items-back.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+
+    color: #000000;
+
+    min-height: 1170px;
+}
+
+.page__header{
+    background-color: #000000;
+}
+
+.page__navigation{
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 940px;
+    margin: 0 auto;
+
+    margin-bottom: 55px;
+}
+
+.page__logo{
+    order: 0;
+    margin-bottom: 0;
+
+    line-height: 0;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.site-navigation__link_current::after{
+    content: "";
+
+    box-sizing: content-box;
+
+    position: absolute;
+
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
+
+    height: 4px;
+
+    background-color: #fff;
+}
+
+.site-navigation__link_current:not([href]):hover ,
+.site-navigation__link_current:not([href]):focus,
+.site-navigation__link_current:not([href]):active{
+    background-color: #000000;
+}
+
+.page__headline_care-products{
+    font-size: 30px;
+    line-height: 42px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.page__bread-crumbs{
+    display: flex;
 }
