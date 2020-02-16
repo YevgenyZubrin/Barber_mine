@@ -59,35 +59,41 @@
             <li class="item bread-crumbs__item bread-crumbs__item_current">средство для ухода</li>
         </ul>
 
-        <div class="container">
+        <div class="page__container">
             <section class="filters page__filters">
                 <form class="page__form" action="https://echo.htmlacademy.ru" method="GET">
                     <fieldset class="page__fieldset">
                         <legend>производители:</legend>
                         <ul class="item page-filter__list">
                             <li class="item page-filter__item">
+                                <label class="filter__label" for="filter_baxter-of-california">
                                 <input class="visually-hidden page-filter__checkbox" name="baxter-of-california" type="checkbox" id="filter_baxter-of-california" checked><span class="checkbox__indicator"></span>
-                                <label class="filter__label" for="filter_baxter-of-california">baxter of california</label>
+                                baxter of california</label>
                             </li>
                             <li class="item page-filter__item">
+                                <label class="filter__label" for="filter_mr-natty">
                                 <input class="visually-hidden page-filter__checkbox" name="mr-natty" type="checkbox" id="filter_mr-natty"><span class="checkbox__indicator"></span>
-                                <label class="filter__label" for="filter_mr-natty">mr natty</label>
+                                mr natty</label>
                             </li>
                             <li class="item page-filter__item">
+                                <label class="filter__label" for="filter_suavecito">
                                 <input class="visually-hidden page-filter__checkbox" name="suavecito" type="checkbox" id="filter_suavecito" checked><span class="checkbox__indicator"></span>
-                                <label class="filter__label" for="filter_suavecito">Suavecito</label>
+                                Suavecito</label>
                             </li>
                             <li class="item page-filter__item">
+                                <label class="filter__label" for="filter_malin+goetz">
                                 <input class="visually-hidden page-filter__checkbox" name="malin+goetz" type="checkbox" id="filter_malin+goetz"><span class="checkbox__indicator"></span>
-                                <label class="filter__label" for="filter_malin+goetz">Malin+Goetz</label>
+                                Malin+Goetz</label>
                             </li>
                             <li class="item page-filter__item">
+                                <label class="filter__label" for="filter_murray’s">
                                 <input class="visually-hidden page-filter__checkbox" name="murray’s" type="checkbox" id="filter_murray’s"><span class="checkbox__indicator"></span>
-                                <label class="filter__label" for="filter_murray’s">Murray’s</label>
+                                Murray’s</label>
                             </li>
                             <li class="item page-filter__item">
+                                <label class="filter__label" for="filter_american-crew">
                                 <input class="visually-hidden page-filter__checkbox" name="american-crew" type="checkbox" id="filter_american-crew" checked ><span class="checkbox__indicator"></span>
-                                <label class="filter__label" for="filter_american-crew">American Crew</label>
+                                American Crew</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -95,21 +101,82 @@
                         <legend>группы товаров:</legend>
                         <ul class="item page-filter__list">
                             <li class="item page-filter__item">
-                                <input class="visually-hidden page-filter__radio" type="radio" name="radio_product-group" id="filter_shave"><span class="checkbox__indicator radio__indicator"></span>
-                                <label class="filter__label" for="filter_shave">Бритвенные принадлежности</label>
+                                <label class="filter__label" for="filter_shave">
+                                <input class="visually-hidden page-filter__radio" type="radio" name="radio_product-group" value="" id="filter_shave"><span class="checkbox__indicator radio__indicator"></span>
+                                Бритвенные принадлежности</label>
                             </li>
                             <li class="item page-filter__item">
-                                <input class="visually-hidden page-filter__radio" type="radio" name="radio_product-group" id="filter_care" checked><span class="checkbox__indicator radio__indicator"></span>
-                                <label class="filter__label" for="filter_care">Средства для ухода</label>
+                                <label class="filter__label" for="filter_care">
+                                <input class="visually-hidden page-filter__radio" type="radio" name="radio_product-group" value="" id="filter_care" checked><span class="checkbox__indicator radio__indicator"></span>
+                                Средства для ухода</label>
                             </li>
                             <li class="item page-filter__item">
-                                <input class="visually-hidden page-filter__radio" type="radio" name="radio_product-group" id="filter_accessories"><span class="checkbox__indicator radio__indicator"></span>
-                                <label class="filter__label" for="filter_accessories">Аксессуары</label>
+                                <label class="filter__label" for="filter_accessories">
+                                <input class="visually-hidden page-filter__radio" type="radio" name="radio_product-group" value="" id="filter_accessories"><span class="checkbox__indicator radio__indicator"></span>
+                                Аксессуары</label>
                             </li>
                         </ul>
                     </fieldset>
                     <button class="button container__button" type="submit">показать</button>
                 </form>
+            </section>
+            <section class="page__catalog">
+                <ul class="catalog__list">
+                    <li class="item catalog__item">
+                        <img src="images/BOC_travel.jpg" alt="Набор для путешествий «Baxter of California»">
+                        <b class="catalog__product-name"><span class="catalog__product-name_capitalize">Набор для путешествий</span> 
+                            <br>«Baxter of California»</b>
+                        <div class="catalog__wrapper">
+                            <span class="catalog__price">2900Р</span>
+                            <a class="link button catalog__button" href="#">купить</a>
+                        </div>
+                    </li>
+                    <li class="item catalog__item">
+                        <img src="images/BOC_wetting.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
+                        <b class="catalog__product-name"><span class="catalog__product-name_capitalize">Увлажняющий кондиционер</span> 
+                            <br>«Baxter of California»</b>
+                        <div class="catalog__wrapper">
+                            <span class="catalog__price">750Р</span>
+                            <a class="link button catalog__button" href="#">купить</a>
+                        </div>
+                    </li>
+                    <li class="item catalog__item">
+                        <img src="images/S_hair-gel.jpg" alt="Гель для волос «SUAVECITO»">
+                        <b class="catalog__product-name"><span class="catalog__product-name_capitalize">Гель для волос</span> 
+                            <br>«SUAVECITO»</b>
+                        <div class="catalog__wrapper">
+                            <span class="catalog__price">290Р</span>
+                            <a class="link button catalog__button" href="#">купить</a>
+                        </div>
+                    </li>
+                    <li class="item catalog__item">
+                        <img src="images/AC_hair-clay.jpg" alt="Глина для укладки волос «American crew»">
+                        <b class="catalog__product-name"><span class="catalog__product-name_capitalize">Глина для укладки волос</span> 
+                            <br>«American crew»</b>
+                        <div class="catalog__wrapper">
+                            <span class="catalog__price">500Р</span>
+                            <a class="link button catalog__button" href="#">купить</a>
+                        </div>
+                    </li>
+                    <li class="item catalog__item">
+                        <img src="images/AC_hair-gel.jpg" alt="Гель для волос «AMERICAN CREW»">
+                        <b class="catalog__product-name"><span class="catalog__product-name_capitalize">Гель для волос</span> 
+                            <br>«AMERICAN CREW»</b>
+                        <div class="catalog__wrapper">
+                            <span class="catalog__price">300Р</span>
+                            <a class="link button catalog__button" href="#">купить</a>
+                        </div>
+                    </li>
+                    <li class="item catalog__item">
+                        <img src="images/BOC_shaver-kit.jpg" alt="Набор для бритья «Baxter of California»">
+                        <b class="catalog__product-name"><span class="catalog__product-name_capitalize">Набор для бритья</span> 
+                            <br>«Baxter of California»</b>
+                        <div class="catalog__wrapper">
+                            <span class="catalog__price">3900Р</span>
+                            <a class="link button catalog__button" href="#">купить</a>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
