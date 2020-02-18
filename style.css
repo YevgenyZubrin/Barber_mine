@@ -981,3 +981,67 @@ input[type="radio"].visually-hidden{
     background-color: #fff;
     color: #000000;
 }
+
+.page__product-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-photo__image{
+    margin-bottom: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.page__product-description{
+    padding-left: 90px;
+}
+
+.page__product-vendor-code{
+    color: #aeaeae;
+}
+
+.page__product-availability-and-code{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.page__product-description-text{
+    margin-bottom: 35px;
+}
+
+.product__price-wrapper{
+    margin-bottom: 65px;
+}
+
+.page__includes-headline{
+    font-size: 24px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+}
+
+.product-kit-includes__item{
+    position: relative;
+
+    padding-left: 20px;
+}
+
+.product-kit-includes__item::before{
+    position: absolute;
+
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    top: 8px;
+    left: 3px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+}
