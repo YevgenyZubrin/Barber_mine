@@ -1054,3 +1054,32 @@ input[type="radio"].visually-hidden{
 
     transform: rotate(45deg);
 }
+
+.page__haircut-style{
+    display: flex;
+    align-items: center;
+   
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.page__haircut-style::before,
+.page__haircut-style::after{
+    content: "";
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.page__haircut-style::before{
+    margin-right: 20px;
+}
+
+.page__haircut-style::after{
+    margin-left: 20px;
+}
