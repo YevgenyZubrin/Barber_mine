@@ -937,6 +937,10 @@ input[type="radio"].visually-hidden{
 }
 
 .catalog__price{
+    padding-right: 5px;
+}
+
+.catalog__price-currency{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -945,6 +949,11 @@ input[type="radio"].visually-hidden{
     height: 44px;
 
     background-color: #e5e5e5;
+}
+
+.catalog__price-currency::after{
+    content: " \20BD";
+    padding-left: 5px;
 }
 
 .catalog__button{
