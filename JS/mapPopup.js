@@ -1,4 +1,4 @@
-var mapPopupOpen = document.querySelector(".container__button_map");
+var mapPopupOpen = document.querySelector(".column__button_map");
 var mapPopupClose = document.querySelector(".modal-map__button_close");
 var mapPopup = document.querySelector(".page__modal-map");
 var overlay = document.querySelector(".page__overlay");

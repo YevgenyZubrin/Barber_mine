@@ -186,7 +186,7 @@ input[type="radio"].visually-hidden{
     padding-bottom: 80px;
 }
 
-.main__container{
+.main__column{
     display: flex;
     justify-content: space-between;
 
@@ -201,29 +201,29 @@ input[type="radio"].visually-hidden{
     margin-bottom: 36px;
 }
 
-.container__news,
-.container__contacts{
+.column__news,
+.column__contacts{
     width: 350px;
 }
 
-.container__text{
+.column__text{
     margin-bottom: 25px;
 }
 
-.container__headline{
+.column__headline{
     font-size: 30px;
     line-height: 42px;
 
     margin-bottom: 20px;
 }
 
-.container__date{
+.column__date{
     display: block;
 
     text-transform: lowercase;
 }
 
-.container__button{
+.column__button{
     display: inline-block;
 
     cursor: pointer;
@@ -239,18 +239,18 @@ input[type="radio"].visually-hidden{
     background-color: #000000;
 }
 
-.container__button:hover,
-.container__button:focus,
-.container__button:active{
+.column__button:hover,
+.column__button:focus,
+.column__button:active{
     background-color: #663d15;
 }
 
-.container__button_map{
+.column__button_map{
     margin-right: 20px;
 }
 
-.container__gallery,
-.container__appointment{
+.column__gallery,
+.column__appointment{
     position: relative;
 
     width: 300px;
@@ -273,7 +273,7 @@ input[type="radio"].visually-hidden{
     right: 0;
 }
 
-.container__photo{
+.column__photo{
     height: 164px;
 
     background-color: #ffffff;
@@ -281,7 +281,7 @@ input[type="radio"].visually-hidden{
     border: 7px solid #ffffff;
 }
 
-.container__form{
+.column__form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -303,6 +303,7 @@ input[type="radio"].visually-hidden{
 .form__label{
     margin-left: 15px;
     margin-bottom: 10px;
+    padding-left: 0;
 }
 
 .form__input{
@@ -327,7 +328,7 @@ input[type="radio"].visually-hidden{
     border: 2px solid #663d15;
 }
 
-.container__button_submit{
+.column__button_submit{
     width: 100%;
 
     margin-top: 10px;
@@ -467,10 +468,6 @@ input[type="radio"].visually-hidden{
     margin-bottom: 20px;
 }
 
-/* .modal-login__description{
-   
-} */
-
 .form__login{
     text-transform: uppercase;
     font: inherit;
@@ -499,10 +496,6 @@ input[type="radio"].visually-hidden{
 .form__restore:active,
 .form__restore:focus{
     text-decoration: none;
-}
-
-.form__label{
-    padding-left: 30px;
 }
 
 .checkbox__indicator{
