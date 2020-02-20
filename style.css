@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden{
     overflow: hidden;
 }
 
-.page__main{
+.main__content{
     max-width: 940px;
 
     margin: 0 auto;
@@ -155,7 +155,7 @@ input[type="radio"].visually-hidden{
     list-style: none;
 }
 
-.feature__headline{
+.feature__title{
     position: relative;
 
     padding-bottom: 65px;
