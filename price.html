@@ -46,9 +46,9 @@
     </header>
 
     <main class="main-content main__content">
-        <h1 class="headline page__headline_care-products">прайс-лист</h1>
+        <h1 class="main-content__title">прайс-лист</h1>
 
-        <ul class="list page__bread-crumbs">
+        <ul class="main-content__bread-crumbs bread-crumbs">
             <li class="item bread-crumbs__item">
                 <a class="link bread-crumbs__link" href="index.html">главная</a>
             </li>
@@ -112,15 +112,15 @@
         </div>
 
     </main>
-    <footer class="main__footer page-shop__footer">
+    <footer class="footer footer-shadow">
         <div class="footer__container footer__container_price">
-            <p class="contacts footer__contacts">
+            <p class="footer__contacts">
                 БАРБЕРШОП «БОРОДИНСКИЙ»
                 <br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
                 <br><a class="link contacts__link" href="#">КАК НАС НАЙТИ?</a>
                 <br>ТЕЛЕФОН: +7 (495) 666-02-66
             </p>
-            <div class="social footer__social">
+            <div class="footer__social">
                 <b>давайте дружить!</b>
                 <ul class="footer__list">
                     <li class="item footer__item">
@@ -148,33 +148,31 @@
                     </li>
                 </ul>
             </div>
-            <p class="copyright footer__copyright">
+            <p class="footer__copyright">
                 <b>разработано:</b>
                 <a class="button link column__button copyright__button" href="#">html academy</a>
             </p>
         </div>
     </footer>
 
-    <div class="modal modal-login page__modal-login">
-        <h2 class="headline modal-login__headline">личный кабинет</h2>
-        <p class="text modal-login__description">ВВедите пожалуйста свой логин и пароль</p>
-        <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="GET">
-            <p class="text modal-login__input">
+    <div class="modal-shadow modal-login page__modal-login">
+        <h2 class="modal-login__title">личный кабинет</h2>
+        <p class="modal-login__description">ВВедите пожалуйста свой логин и пароль</p>
+        <form class="modal-login__form modal-login-form" action="https://echo.htmlacademy.ru" method="GET">
+            <p class="modal-login-form__content">
                 <label class="visually-hidden" for="login">логин</label>
-                <input class="form__input form__login" type="text" id="login" name="login" placeholder="логин" value="">
+                <input class="form__input modal-login-form__login" type="text" id="login" name="login" placeholder="логин" value="">
             </p>
-            <p class="text modal-login__input">
+            <p class="modal-login-form__content">
                 <label class="visually-hidden" for="password">пароль</label>
-                <input class="form__input form__login" type="password" id="password" name="password"
-                    placeholder="пароль" value="">
+                <input class="form__input modal-login-form__login" type="password" id="password" name="password" placeholder="пароль" value="">
             </p>
             <p class="form__remember">
-                <label class="login-form__label form__label" for="remember">
-                    <input class="visually-hidden form__checkbox" type="checkbox" id="remember" value=""><span
-                        class="checkbox__indicator"></span>
+                <label class="login-form__label" for="remember">
+                    <input class="visually-hidden form__checkbox" type="checkbox" id="remember" value=""><span class="checkbox__indicator"></span>
                     запомните меня
                 </label>
-                <a class="link form__restore" href="#">я забыл пароль!</a>
+                <a class="link login-form__link_restore" href="#">я забыл пароль!</a>
             </p>
             <button class="button column__button modal-login__button">войти</button>
         </form>

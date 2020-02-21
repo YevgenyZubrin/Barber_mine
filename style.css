@@ -64,8 +64,27 @@
 .link{
     display: block;
 
-    color: #ffffff;
     text-decoration: none;
+}
+
+.button{
+    display: inline-block;
+
+    cursor: pointer;
+
+    color: #ffffff;
+    font: inherit;
+    text-transform: uppercase;
+
+    border: none;
+
+    background-color: #000000;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+    background-color: #663d15;
 }
 
 .site-navigation__link,
@@ -76,6 +95,7 @@
 
     font-size: 16px;
     line-height: 20px;
+    color: #ffffff;
 
     padding: 25px 20px;
 }
@@ -151,8 +171,6 @@ input[type="radio"].visually-hidden{
     text-align: center;
 
     width: 30%;
-
-    list-style: none;
 }
 
 .feature__title{
@@ -186,7 +204,7 @@ input[type="radio"].visually-hidden{
     padding-bottom: 80px;
 }
 
-.main__column{
+.column__wrapper{
     display: flex;
     justify-content: space-between;
 
@@ -210,7 +228,7 @@ input[type="radio"].visually-hidden{
     margin-bottom: 25px;
 }
 
-.column__headline{
+.column__title{
     font-size: 30px;
     line-height: 42px;
 
@@ -224,25 +242,7 @@ input[type="radio"].visually-hidden{
 }
 
 .column__button{
-    display: inline-block;
-
-    cursor: pointer;
-
-    color: #ffffff;
-    font: inherit;
-    text-transform: uppercase;
-
     padding: 10px 35px;
-
-    border: none;
-
-    background-color: #000000;
-}
-
-.column__button:hover,
-.column__button:focus,
-.column__button:active{
-    background-color: #663d15;
 }
 
 .column__button_map{
@@ -281,13 +281,13 @@ input[type="radio"].visually-hidden{
     border: 7px solid #ffffff;
 }
 
-.column__form{
+.appointment__form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.form__content{
+.appointment-form__content{
     display: flex;
     flex-direction: column;
 
@@ -300,10 +300,14 @@ input[type="radio"].visually-hidden{
     margin-bottom: 15px;
 }
 
-.form__label{
+.appointment-form__label{
     margin-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     padding-left: 0;
+}
+
+.appointment-form__input{
+    width: 140px;
 }
 
 .form__input{
@@ -311,8 +315,6 @@ input[type="radio"].visually-hidden{
 
     font: inherit;
     text-transform: capitalize;
-
-    width: 140px;
 
     padding-top: 9px;
     padding-left: 20px;
@@ -334,17 +336,15 @@ input[type="radio"].visually-hidden{
     margin-top: 10px;
 }
 
-.main__footer{
+.footer{
+    color: #ffffff;
+
     background-color: #252525;
     background-image: url(backgrounds/main-footer-back.jpg);
 }
 
-.page-shop__footer{
+.footer-shadow{
     box-shadow: inset 0px 25px 15px 0px rgba(0, 0, 0, 0.5);
-}
-
-.main__footer{
-    color: #ffffff;
 }
 
 .footer__container{
@@ -365,6 +365,8 @@ input[type="radio"].visually-hidden{
 
 .contacts__link{
     display: inline-block;
+
+    color: #ffffff;
 
     text-decoration: underline;
 }
@@ -457,11 +459,11 @@ input[type="radio"].visually-hidden{
     z-index: 5;
 }
 
-.modal{
+.modal-shadow{
     box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal-login__headline{
+.modal-login__title{
     font-size: 30px;
     line-height: 42px;
 
@@ -470,13 +472,14 @@ input[type="radio"].visually-hidden{
     margin-bottom: 20px;
 }
 
-.form__login{
+.modal-login-form__content{
+    margin-bottom: 10px;
+}
+
+.modal-login-form__login{
     text-transform: uppercase;
-    font: inherit;
 
     width: 100%;
-
-    margin-bottom: 10px;
 }
 
 .modal-login__description{
@@ -497,17 +500,18 @@ input[type="radio"].visually-hidden{
 .login-form__label{
     margin-left: 0;
     padding-left: 30px;
+    margin-bottom: 10px;
 }
 
-.form__restore{
+.login-form__link_restore{
     color: #000000;
 
     text-decoration: underline;
 }
 
-.form__restore:hover,
-.form__restore:active,
-.form__restore:focus{
+.login-form__link_restore:hover,
+.login-form__link_restore:active,
+.login-form__link_restore:focus{
     text-decoration: none;
 }
 
@@ -706,14 +710,14 @@ input[type="radio"].visually-hidden{
     background-color: #000000;
 }
 
-.page__headline_care-products{
+.main-content__title{
     font-size: 30px;
     line-height: 42px;
 
     margin-bottom: 20px;
 }
 
-.page__bread-crumbs{
+.main-content__bread-crumbs{
     display: flex;
 
     margin-bottom: 55px;
@@ -947,6 +951,7 @@ input[type="radio"].visually-hidden{
 
     width: 43px;
     height: 43px;
+    color: #ffffff;
 
     background-color: #000000;
 }
