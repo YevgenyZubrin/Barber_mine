@@ -364,6 +364,8 @@ input[type="radio"].visually-hidden{
 }
 
 .contacts__link{
+    display: inline-block;
+
     text-decoration: underline;
 }
 
@@ -473,6 +475,12 @@ input[type="radio"].visually-hidden{
     font: inherit;
 
     width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.modal-login__description{
+    margin-bottom: 10px;
 }
 
 .modal-login__button{
@@ -484,6 +492,11 @@ input[type="radio"].visually-hidden{
     justify-content: space-between;
 
     position: relative;
+}
+
+.login-form__label{
+    margin-left: 0;
+    padding-left: 30px;
 }
 
 .form__restore{
@@ -644,7 +657,7 @@ input[type="radio"].visually-hidden{
 
     color: #000000;
 
-    min-height: 1170px;
+    min-height: 1000px;
 }
 
 .page__header{
@@ -835,7 +848,7 @@ input[type="radio"].visually-hidden{
     border-radius: 100%;
 }
 
-.page__container{
+.page__column{
     display: flex;
     justify-content: space-between;
 }
@@ -1021,6 +1034,8 @@ input[type="radio"].visually-hidden{
     line-height: 52px;
 
     text-align: center;
+
+    margin-bottom: 70px;
 }
 
 .page__haircut-style::before,
@@ -1042,4 +1057,76 @@ input[type="radio"].visually-hidden{
 
 .page__haircut-style::after{
     margin-left: 20px;
+}
+
+.inner-content__padding{
+    padding-bottom: 65px;
+}
+
+.inner-content__column_left{
+    width: 50%;
+}
+
+.inner-content__column_right{
+    width: 50%;
+}
+
+.inner-content__title{
+    margin-bottom: 25px;
+}
+
+.inner-content__item{
+    position: relative;
+
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.inner-content__item::before{
+    position: absolute;
+
+    content: "";
+
+    top: 8px;
+    left: 2px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+}
+
+.inner-content__title_under-table{
+    margin-bottom: 32px;
+}
+
+.inner-content__about{
+    flex-wrap: wrap;
+}
+
+.inner-content__title_about{
+    flex-basis: 100%;
+}
+
+.inner-content__table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.inner-content-table__cell{
+    width: 50%;
+
+    padding: 8px 15px;
+
+    border: 2px solid #000000;
+}
+
+.inner-content__text{
+    padding-right: 85px;
+}
+
+.footer__container_price{
+    margin-top: 0;
 }

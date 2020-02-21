@@ -57,31 +57,68 @@
 
         <h2 class="page__haircut-style">истинно мужская стрижка</h2>
 
-        <div class="page__column price-column">
-            <section class="price-column__left">
-                <h2 class="price-column__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
-                <ul class="price-column__list">
-                    <li class="price-column__item">Baxter of California</li>
-                    <li class="price-column__item">Mr Natty</li>
-                    <li class="price-column__item">Suavecito</li>
-                    <li class="price-column__item">Malin+Goetz</li>
+        <div class="page__column inner-content inner-content__padding">
+            <section class="inner-content__column_left">
+                <h2 class="inner-content__title">
+                    МЫ ИСПОЛЬЗУЕМ ТОЛЬКО
+                    <br>ЛУЧШИЕ СРЕДСТВА:
+                </h2>
+                <ul class="inner-content__list">
+                    <li class="item inner-content__item">Baxter of California</li>
+                    <li class="item inner-content__item">Mr Natty</li>
+                    <li class="item inner-content__item">Suavecito</li>
+                    <li class="item inner-content__item">Malin+Goetz</li>
                 </ul>
-
-                
             </section>
-            <section class="column__right">
 
+            <section class="inner-content__column_right">
+                <h2 class="inner-content__title inner-content__title_under-table">
+                    ЦЕНЫ НА УСЛУГИ
+                    <br>НАШИХ МАСТЕРОВ:
+                </h2>
+                <table class="inner-content__table inner-content-table">
+                    <tr class="inner-content-table__row">
+                        <td class="inner-content-table__cell">стрижка</td>
+                        <td class="inner-content-table__cell">1 500</td>
+                    </tr>
+                    <tr class="inner-content-table__row">
+                        <td class="inner-content-table__cell">стрижка бороды</td>
+                        <td class="inner-content-table__cell">500</td>
+                    </tr>
+                    <tr class="inner-content-table__row">
+                        <td class="inner-content-table__cell">накрутка усов</td>
+                        <td class="inner-content-table__cell">350</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div class="page__column inner-content inner-content__padding inner-content__about">
+
+            <h2 class="inner-content__title inner-content__title_about">несколько слов о нас:</h2>
+            <section class="inner-content__column_left">
+                <p class="inner-content__text">
+                    Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас -
+                    это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+                </p>
+            </section>
+            <section class="inner-content__column_right">
+                <p class="inner-content__text">
+                    Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время,
+                    даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя
+                    комфортно и свободно!
+                </p>
             </section>
         </div>
 
     </main>
     <footer class="main__footer page-shop__footer">
-        <div class="footer__container">
+        <div class="footer__container footer__container_price">
             <p class="contacts footer__contacts">
                 БАРБЕРШОП «БОРОДИНСКИЙ»
                 <br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-                <a class="link contacts__link" href="#">КАК НАС НАЙТИ?</a>
-                ТЕЛЕФОН: +7 (495) 666-02-66
+                <br><a class="link contacts__link" href="#">КАК НАС НАЙТИ?</a>
+                <br>ТЕЛЕФОН: +7 (495) 666-02-66
             </p>
             <div class="social footer__social">
                 <b>давайте дружить!</b>
@@ -132,7 +169,7 @@
                     placeholder="пароль" value="">
             </p>
             <p class="form__remember">
-                <label class="form__label" for="remember">
+                <label class="login-form__label form__label" for="remember">
                     <input class="visually-hidden form__checkbox" type="checkbox" id="remember" value=""><span
                         class="checkbox__indicator"></span>
                     запомните меня
