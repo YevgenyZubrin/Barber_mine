@@ -50,8 +50,8 @@ loginForm.addEventListener("submit", function(evt){
 });
 
 window.addEventListener("keydown", function(evt){
-    evt.preventDefault();
     if (evt.keyCode === 27){
+    evt.preventDefault();
         if(loginPopup.classList.contains("modal-show")){
             loginPopup.classList.remove("modal-show");
             overlay.classList.remove("overlay-show");
