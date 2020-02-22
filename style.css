@@ -941,9 +941,9 @@ input[type="radio"].visually-hidden{
     background-color: #e5e5e5;
 }
 
-.catalog__price-currency::after{
+.price__currency::after{
     content: " \20BD";
-    padding-left: 5px;
+    padding-left: 3px;
 }
 
 .catalog__button{
@@ -1141,6 +1141,10 @@ input[type="radio"].visually-hidden{
     padding: 8px 15px;
 
     border: 2px solid #000000;
+}
+
+.inner-content-table__cell_price{
+    text-align: center;
 }
 
 .inner-content__text{
